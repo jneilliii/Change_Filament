@@ -89,7 +89,7 @@ $(function() {
 					{'commands': [
 						'@resume'
 						],
-						'customClass': 'btn', 'name': ' Resume'}
+						'customClass': 'btn', 'name': ' Resume', 'additionalClasses': 'changefilament-resume'}
 				]
 			}];
 
