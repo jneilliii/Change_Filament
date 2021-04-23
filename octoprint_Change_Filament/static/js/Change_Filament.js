@@ -41,7 +41,7 @@ $(function() {
 
 			var preparkpause = '';
 			if (settings.pause_before_park() != false) {
-				preparkpause = 'M0';
+				preparkpause = '@pause';
 			}
 
 			var preparkhome = '';
@@ -87,11 +87,9 @@ $(function() {
 						],
 						'customClass': 'btn', 'additionalClasses': 'changefilament-load', 'name': ' Load'},
 					{'commands': [
-						'M600'
+						'@resume'
 						],
-						'customClass': 'btn', 'additionalClasses': ' btn-danger changefilament-m600', 'name': ' M600'},
-					{'output': 'WARNING: Preheat first! Refresh page after changing settings.'},
-					{'output': 'M600 requires special support in Marlin and must be completed using the control box.'}
+						'customClass': 'btn', 'name': ' Resume'}
 				]
 			}];
 
